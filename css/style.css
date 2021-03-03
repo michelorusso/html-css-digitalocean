@@ -24,9 +24,10 @@
     width: 150px;
 }
 
-.burger a{
+#nav-top .burger a i{
     font-size: 20px;
     color: #2485fd;
+    padding-top: 5px;
 }
 
 #nav-top a{
