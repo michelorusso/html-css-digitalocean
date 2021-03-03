@@ -1,4 +1,8 @@
 /* COMMON */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 .menu {
     list-style-type: none;
 }
@@ -49,4 +53,71 @@
 #nav-top a i {
     margin: 0 2px;
     font-size: 13px;
+}
+
+/* Jumbotron */
+#jumbotron {
+    background-image: url(../img/ms-jumbo.jpg);
+    padding: 30px 0;
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+#jumbotron h1 {
+    color: white;
+    font-size: 35px;
+}
+
+#jumbotron p {
+    color: lightgrey;
+    font-size: 20px;
+}
+
+.minibox-jumbo {
+    background-color: white;
+    border-radius: 5px;
+    padding: 17px 12px;
+}
+
+.minibox-jumbo h2 {
+    color: rgb(3, 27, 78);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.minibox-jumbo h2 span {
+    color: #1a54f1;
+}
+.minibox-jumbo .btn_account {
+    background-color: #2485fd;
+    color: white;
+    border: 1px solid #2485fd;
+    font-weight: 700;
+}
+
+.btn_google {
+    position: relative;
+    font-weight: 700;
+}
+.btn_google img {
+    width: 18px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+
+.minibox-jumbo h5 {
+    color: rgb(3, 27, 78);
+    font-weight: 600;
+}
+
+.minibox-jumbo h5 a {
+    color: #2485fd;
+    text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+    #jumbotron h1 {
+        font-size: 60px;
+    }
 }
