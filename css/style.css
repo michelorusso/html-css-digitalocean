@@ -1,0 +1,51 @@
+/* COMMON */
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+/* Nav */
+#nav-top {
+    padding: 10px 0;
+    line-height: 30px;
+}
+
+.logo-nav {
+    width: 150px;
+}
+
+.burger a{
+    font-size: 20px;
+    color: #2485fd;
+}
+
+#nav-top a{
+    color: rgb(3, 27, 78);
+    font-size: 13px;
+}
+
+#nav-top .btn_nav {
+    background-color: white;
+    border: 1px solid #2485fd;
+    color: #2485fd;
+}
+
+#nav-top .btn_nav:hover {
+    background-color: #2485fd;
+    color: white;
+}
+
+#nav-top a i {
+    margin: 0 2px;
+    font-size: 13px;
+}
