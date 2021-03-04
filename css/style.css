@@ -27,7 +27,8 @@ ul {
 }
 
 h2,
-h4 {
+h4,
+h5 {
     color: #031b4e;
     font-weight: 600;
 }
@@ -214,7 +215,11 @@ p {
 /* Designed for */
 .designed {
     background-color: #f3f5f9;
-    padding: 50px 0;
+    padding-bottom: 40px;
+}
+
+.designed .title {
+    padding-top: 30px;
 }
 
 .designed .title p {
@@ -223,17 +228,46 @@ p {
 
 /* slide */
 .slide {
-    margin: 100px 0;
+    padding-top: 100px;
 }
 
 .slide img {
     padding: 0 50px;
 }
 
-.v {
-    line-height: 50%;
+.slide a {
+    font-size: 30px;
+    color: rgba(3, 27, 78, 0.6);
 }
-@media (min-width: 768px) {
+
+.slide .align {
+    line-height: 300px;
+}
+
+.slide .menu {
+    padding: 0;
+}
+
+.slide .menu a {
+    font-size: 12px;
+    color: #0069ff;
+}
+
+.fa-chevron-right {
+    color: #031b4e;
+}
+
+.margin-link {
+    padding-top: 80px;
+}
+
+
+
+
+
+
+
+@media all and (min-width: 768px) {
     .logo-sponsor li {
         width: calc( ( 100% / 6) - 1% );
         text-align: center;
@@ -256,14 +290,30 @@ p {
     }
 }
 
-@media (min-width: 992px) {
+@media all and (min-width: 992px) and (max-width: 1199px) {
     #jumbotron h1 {
         font-size: 60px;
     }
 
     .slide {
-        margin: 50px 0;
+        padding-top: 30px;
     }
 
+    .margin-link {
+        padding-top: 0;
+    }
+}
 
+@media all and (min-width: 1200px) {
+    .slide .align {
+        line-height: 360px;
+    }
+
+    .slide {
+        padding-top: 30px;
+    }
+
+    .margin-link {
+        padding-top: 0;
+    }
 }
