@@ -400,6 +400,93 @@ p {
     font-size: 15px;
 }
 
+/* FOOTER */
+footer {
+    background-color: #010e28;
+    padding: 50px 0;
+}
+
+/* TEST */
+footer h5 {
+    color: white;
+}
+
+footer p {
+    color: gray;
+    padding-top: 15px;
+}
+
+footer p span {
+    color: rgb(78, 78, 78);
+    font-size: 14px;
+}
+
+footer .unit li {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: grey;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer a i {
+    font-size: 18px;
+}
+
+footer ul {
+    padding: 0;
+}
+
+/* Shark Fixed */
+.shark {
+    position: fixed;
+    bottom: 30px;
+    left: 25px;
+}
+
+.shark-img {
+    width: 50px;
+    height: 50px;
+    background-color: #0077ff;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 5px;
+}
+
+.shark-img .shark-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    border: 3px solid white;
+    color: white;
+    line-height: 18px;
+    font-size: 10px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.shark-chat {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.shark-chat span {
+    color: #031b4e;
+}
+
+/* Fine TEST */
 @media all and (min-width: 768px) {
     .logo-sponsor li {
         width: calc( ( 100% / 6) - 1% );
@@ -443,7 +530,16 @@ p {
     .slide .bcground {
         margin: 0;
     }
-}
+
+    .shark {
+        line-height: 60px;
+    }
+
+    .shark-img,
+    .shark-chat {
+        display: inline-block;
+    }
+
 
 @media all and (min-width: 1200px) {
     .slide .align {
@@ -460,5 +556,10 @@ p {
 
     .slide .bcground {
         margin: 0;
+    }
+
+    .shark-img,
+    .shark-chat {
+        display: inline-block;
     }
 }
