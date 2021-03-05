@@ -5,6 +5,7 @@ body {
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .menu li {
@@ -58,6 +59,9 @@ p {
 }
 
 /* link nav */
+#nav-top ul {
+    padding-left: 40px;
+}
 #nav-top .menu li {
     margin-right: 10px;
 }
@@ -184,10 +188,6 @@ p {
     padding-top: 40px;
 }
 
-.benefits ul {
-    padding: 0;
-}
-
 .benefits li {
     padding: 6px 10px;
     border-left: 2px solid #e5e8ed;
@@ -244,10 +244,6 @@ p {
     line-height: 300px;
 }
 
-.slide .menu {
-    padding: 0;
-}
-
 .slide .menu a {
     font-size: 12px;
     color: #0069ff;
@@ -300,7 +296,6 @@ p {
 }
 
 .test-speed .menu {
-    padding: 0;
     border-bottom: 1px solid white;
 }
 
@@ -326,6 +321,10 @@ p {
 .test a {
     font-size: 13px;
     color: #00d7d2;
+}
+
+.test a:hover {
+    color: white;
 }
 
 .test-speed ul:last-child {
@@ -400,6 +399,10 @@ p {
     font-size: 15px;
 }
 
+#account button:hover {
+    background-color: #0077ff;
+    color: white;
+}
 /* FOOTER */
 footer {
     background-color: #010e28;
@@ -433,14 +436,11 @@ footer a {
 
 footer a:hover {
     color: white;
+    text-decoration: none;
 }
 
 footer a i {
     font-size: 18px;
-}
-
-footer ul {
-    padding: 0;
 }
 
 /* Shark Fixed */
@@ -454,7 +454,7 @@ footer ul {
     width: 50px;
     height: 50px;
     background-color: #0077ff;
-    border-radius: 10px;
+    border-radius: 5px;
     position: relative;
     padding-top: 5px;
 }
@@ -477,13 +477,15 @@ footer ul {
     width: 300px;
     height: 50px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 10px;
     padding: 5px 10px;
+    box-shadow: 2px 2px rgba(119, 123, 131, 0.6);
 }
 
 .shark-chat span {
     color: #031b4e;
+    font-weight: 600;
 }
 
 /* Fine TEST */
@@ -531,15 +533,7 @@ footer ul {
         margin: 0;
     }
 
-    .shark {
-        line-height: 60px;
-    }
-
-    .shark-img,
-    .shark-chat {
-        display: inline-block;
-    }
-
+}
 
 @media all and (min-width: 1200px) {
     .slide .align {
@@ -558,8 +552,4 @@ footer ul {
         margin: 0;
     }
 
-    .shark-img,
-    .shark-chat {
-        display: inline-block;
-    }
 }
