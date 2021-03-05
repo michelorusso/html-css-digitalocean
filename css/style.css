@@ -383,6 +383,23 @@ p {
     padding-top: 20px;
 }
 
+/* Account */
+#account {
+    background-image: linear-gradient(to bottom, #0048C6, #001F9A);
+    padding: 50px 0;
+}
+
+#account h2 {
+    color: white;
+    padding-bottom: 15px;
+}
+
+#account button {
+    font-weight: 600;
+    color: #0077ff;
+    font-size: 15px;
+}
+
 @media all and (min-width: 768px) {
     .logo-sponsor li {
         width: calc( ( 100% / 6) - 1% );
