@@ -447,7 +447,7 @@ footer a i {
 .shark {
     position: fixed;
     bottom: 30px;
-    left: 25px;
+    margin-left: 35px;
 }
 
 .shark-img {
@@ -473,7 +473,8 @@ footer a i {
     right: -8px;
 }
 
-.shark-chat {
+.shark-chat-one,
+.shark-chat-two {
     width: 300px;
     height: 50px;
     background-color: white;
@@ -481,20 +482,47 @@ footer a i {
     margin-top: 10px;
     padding: 5px 10px;
     box-shadow: 2px 2px rgba(119, 123, 131, 0.6);
+    position: relative;
 }
 
-.shark-chat span {
+.shark-chat-one span,
+.shark-chat-two span {
     color: #031b4e;
     font-weight: 600;
 }
 
-/* Fine TEST */
+.shark-chat-one .arrow {
+    position: absolute; 
+    right: -10px;
+    bottom: -3px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px rgba(119, 123, 131, 0.6);
+}
+
+.shark-chat-two .arrow {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: -24px;
+    left: 16px;
+    text-shadow: 1px -1px rgba(119, 123, 131, 0.6);
+}
+
+.shark-chat-one {
+    display: none;
+}
+
+/* Media Query tablets */
 @media all and (min-width: 768px) {
+
+    /* Sponsor */
     .logo-sponsor li {
         width: calc( ( 100% / 6) - 1% );
         text-align: center;
     }
 
+    /* Advantages (benefits) */
     .type-benefits {
         padding-top: 0;
     }
@@ -503,10 +531,12 @@ footer a i {
         padding: 0px 50px;
     }
     
+    /* type-benefits */
     .p-special {
         margin-bottom: 30px;
     }
 
+    /* Slider */
     .slide img {
         padding: 0;
     }
@@ -516,11 +546,15 @@ footer a i {
     }
 }
 
+/* Media Query Desktop */
 @media all and (min-width: 992px) and (max-width: 1199px) {
+
+    /* Jumbotron */
     #jumbotron h1 {
         font-size: 60px;
     }
 
+    /* Slider */
     .slide {
         padding-top: 30px;
     }
@@ -533,9 +567,31 @@ footer a i {
         margin: 0;
     }
 
+    /* Shark Fixed */
+    .shark {
+        margin-left: 0;
+        right: 35px;
+    }
+
+    .shark-chat-two {
+        display: none;
+    }
+
+    .shark-chat-one {
+        display: inline-block;
+    }
+
+    .shark-img {
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: bottom;
+    }
 }
 
+/* Media Query Desktop >1200px */
 @media all and (min-width: 1200px) {
+
+    /* Slider */
     .slide .align {
         line-height: 360px;
     }
@@ -552,4 +608,23 @@ footer a i {
         margin: 0;
     }
 
+    /* Shark Fixed */
+    .shark {
+        margin-left: 0;
+        right: 35px;
+    }
+
+    .shark-chat-two{
+        display: none;
+    }
+
+    .shark-chat-one {
+        display: inline-block;
+    }
+
+    .shark-img {
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: bottom;
+    }
 }
