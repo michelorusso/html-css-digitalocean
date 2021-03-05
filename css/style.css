@@ -282,8 +282,12 @@ p {
 /* Data Center */
 #data-center {
     background-image: linear-gradient(to bottom, #0048C6, #001F9A);
+    padding: 20px 0;
 }
 
+#data-center .title {
+    padding: 10px 0;
+}
 #data-center .title h2{
     font-size: 28px; 
     color: white;
@@ -297,8 +301,40 @@ p {
 
 .test-speed .menu {
     padding: 0;
+    border-bottom: 1px solid white;
 }
 
+.code {
+    width: 12%;
+    padding-left: 15px;
+}
+
+.country {
+    width: 60%;
+    padding-left: 25px;
+}
+
+.country p {
+    color: lightgrey;
+}
+
+.test {
+    width: 25%;
+    padding-left: 15px;
+}
+
+.test a {
+    font-size: 13px;
+    color: #00d7d2;
+}
+
+.test-speed ul:last-child {
+    border-bottom: none;
+}
+
+.mini-wrap {
+    padding-bottom: 20px;
+}
 @media all and (min-width: 768px) {
     .logo-sponsor li {
         width: calc( ( 100% / 6) - 1% );
